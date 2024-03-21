@@ -584,6 +584,16 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"jeorp":[function(require,module,exports) {
+const kurser = document.getElementById("kursDiv");
+const kurserLista = document.getElementById("kursUl");
+var ProgressionList;
+//-----------------------------------ProgressionList----------------------------------
+(function(ProgressionList) {
+    ProgressionList[ProgressionList["A"] = 0] = "A";
+    ProgressionList[ProgressionList["B"] = 1] = "B";
+    ProgressionList[ProgressionList["C"] = 2] = "C";
+})(ProgressionList || (ProgressionList = {}));
+ //---------------------------------------------------------------------
 
 },{}]},["dZI1r","jeorp"], "jeorp", "parcelRequire1f36")
 
