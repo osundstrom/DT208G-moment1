@@ -584,16 +584,42 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"jeorp":[function(require,module,exports) {
-const kurser = document.getElementById("kursDiv");
-const kurserLista = document.getElementById("kursUl");
-var ProgressionList;
-//-----------------------------------ProgressionList----------------------------------
-(function(ProgressionList) {
-    ProgressionList[ProgressionList["A"] = 0] = "A";
-    ProgressionList[ProgressionList["B"] = 1] = "B";
-    ProgressionList[ProgressionList["C"] = 2] = "C";
-})(ProgressionList || (ProgressionList = {}));
- //---------------------------------------------------------------------
+//-------------------------------CourseInfo--------------------------------------
+//---------------------------------------------------------------------
+//Hela div
+let kurser = document.getElementById("kursDiv");
+//Formulär
+let addKurs = document.getElementById("addKurs");
+//Array
+//let allaKurser: kursInfo[] = [];
+//---------------------------------------------------------------------
+addKurs.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    const kursKod = document.getElementById("kursKod");
+    const kursNamn = document.getElementById("kursNamn");
+    const progression = document.getElementById("progression");
+    const url = document.getElementById("url");
+    const checkProgression = progression.value;
+    if (checkProgression != "A" && checkProgression != "B" && checkProgression != "C") {
+        alert("Progression m\xe5ste vara A, B, eller C");
+        return;
+    }
+    const nyKurs = {
+        code: kursKod.value,
+        name: kursNamn.value,
+        progression: progression.value,
+        syllabus: url.value
+    };
+    adderaKurs(nyKurs);
+});
+function adderaKurs(kursInfo) {
+    let kurserLista = document.getElementById("kursLista");
+    if (kurserLista) kurserLista.innerHTML = `<h2>Anv\xe4ndardetaljer:</h2>
+        <p><strong>Kurskod:</strong> ${kursInfo.code}</p>
+        <p><strong>Kursnamn:</strong> ${kursInfo.name}</p>
+        <p><strong>Progression:</strong> ${kursInfo.progression}</p>
+        <p><strong>Url:</strong> ${kursInfo.syllabus}</p>`;
+}
 
 },{}]},["dZI1r","jeorp"], "jeorp", "parcelRequire1f36")
 

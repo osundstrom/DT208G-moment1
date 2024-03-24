@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,19 @@
 </head>
 <body>
     <div id="kursDiv">
-        <h1>Kurser</h1>
-        <ul id="kursUl">
 
-        </ul>
+        <form id="addKurs">
+            <input type="text" id="kursKod" placeholder="Kurskod">
+            <input type="text" id="kursNamn" placeholder="Kursnamn">
+            <input type="text" id="progression" placeholder="Progression">
+            <input type="text" id="url" placeholder="Url">
+            <button id="kursKnapp" type="submit">Lägg till</button>
+        </form>
+
+
+        <div id="kursLista"> </div>
+
+        
     </div>
 </body>
 </html>
