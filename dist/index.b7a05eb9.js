@@ -586,12 +586,10 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 },{}],"jeorp":[function(require,module,exports) {
 //-------------------------------CourseInfo--------------------------------------
 //---------------------------------------------------------------------
-//Hela div
-let kurser = document.getElementById("kursDiv");
+//Hela lsita
+let kurser = document.getElementById("kursLista");
 //Formulär
 let addKurs = document.getElementById("addKurs");
-//Array
-//let allaKurser: kursInfo[] = [];
 //---------------------------------------------------------------------
 addKurs.addEventListener("submit", (event)=>{
     event.preventDefault();
@@ -610,15 +608,23 @@ addKurs.addEventListener("submit", (event)=>{
         progression: progression.value,
         syllabus: url.value
     };
+    let kursLista = JSON.parse(localStorage.getItem("kursLista"));
+    if (!kursLista) kursLista = [];
+    kursLista.push(nyKurs);
+    localStorage.setItem("kursLista", JSON.stringify(kursLista));
     adderaKurs(nyKurs);
 });
 function adderaKurs(kursInfo) {
     let kurserLista = document.getElementById("kursLista");
-    if (kurserLista) kurserLista.innerHTML = `<h2>Anv\xe4ndardetaljer:</h2>
+    if (kurserLista) {
+        let nyDiv = document.createElement("Div");
+        nyDiv.innerHTML = `<h2>Kurs:</h2>
         <p><strong>Kurskod:</strong> ${kursInfo.code}</p>
         <p><strong>Kursnamn:</strong> ${kursInfo.name}</p>
         <p><strong>Progression:</strong> ${kursInfo.progression}</p>
         <p><strong>Url:</strong> ${kursInfo.syllabus}</p>`;
+        kurserLista.appendChild(nyDiv);
+    }
 }
 
 },{}]},["dZI1r","jeorp"], "jeorp", "parcelRequire1f36")
