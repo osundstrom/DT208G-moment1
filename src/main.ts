@@ -65,7 +65,7 @@ function adderaKurs(kursInfo: kursInfo): void {
     if (kurserLista) {
         let nyDiv = document.createElement("Div");
         nyDiv.innerHTML = 
-        `<h2>Kurs:</h2>
+        `<h2>Kursinfo</h2>
         <p><strong>Kurskod:</strong> ${kursInfo.code}</p>
         <p><strong>Kursnamn:</strong> ${kursInfo.name}</p>
         <p><strong>Progression:</strong> ${kursInfo.progression}</p>
@@ -74,3 +74,24 @@ function adderaKurs(kursInfo: kursInfo): void {
         kurserLista.appendChild(nyDiv);
     }
 }
+
+
+
+//-------------------------------------------//---------------//-------------
+
+function sparadeKurser(): void {
+    let allaKurser = JSON.parse(localStorage.getItem("kursLista"));
+    if (allaKurser) {
+        allaKurser.forEach((x: kursInfo) => {
+            adderaKurs(x);
+        });
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    sparadeKurser();
+})
+
+
+//-------------------------------------------//---------------//-------------

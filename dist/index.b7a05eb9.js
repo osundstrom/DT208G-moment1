@@ -618,7 +618,7 @@ function adderaKurs(kursInfo) {
     let kurserLista = document.getElementById("kursLista");
     if (kurserLista) {
         let nyDiv = document.createElement("Div");
-        nyDiv.innerHTML = `<h2>Kurs:</h2>
+        nyDiv.innerHTML = `<h2>Kursinfo</h2>
         <p><strong>Kurskod:</strong> ${kursInfo.code}</p>
         <p><strong>Kursnamn:</strong> ${kursInfo.name}</p>
         <p><strong>Progression:</strong> ${kursInfo.progression}</p>
@@ -626,6 +626,17 @@ function adderaKurs(kursInfo) {
         kurserLista.appendChild(nyDiv);
     }
 }
+//-------------------------------------------//---------------//-------------
+function sparadeKurser() {
+    let allaKurser = JSON.parse(localStorage.getItem("kursLista"));
+    if (allaKurser) allaKurser.forEach((x)=>{
+        adderaKurs(x);
+    });
+}
+document.addEventListener("DOMContentLoaded", function() {
+    sparadeKurser();
+}) //-------------------------------------------//---------------//-------------
+;
 
 },{}]},["dZI1r","jeorp"], "jeorp", "parcelRequire1f36")
 
