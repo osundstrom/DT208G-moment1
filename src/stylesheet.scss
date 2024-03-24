@@ -1,0 +1,57 @@
+
+
+body {
+    background-color: mintcream;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+#kursDiv{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+
+#addKurs {
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    h1{
+        text-decoration: underline;
+    }
+
+    #kursKnapp:hover{
+        background-color: rgb(0, 238, 0);
+    }
+     
+}
+
+
+#kursLista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50vw;
+    margin: auto;
+
+    div{
+        border: 1px solid black;
+        border-radius: 4%;
+        margin: 1%;
+        padding: 1%;
+        background-color: rgb(231, 255, 173);
+        color: rgb(0, 0, 0);
+        width: 24vw;
+    }
+
+    h2{
+        text-decoration: underline;
+        margin-left: 2vw;
+     }
+
+     p{
+        margin-left: 2vw;
+     }
+}

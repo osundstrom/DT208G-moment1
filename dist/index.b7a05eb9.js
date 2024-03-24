@@ -584,22 +584,21 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"jeorp":[function(require,module,exports) {
-//-------------------------------CourseInfo--------------------------------------
-//---------------------------------------------------------------------
-//Hela lsita
-let kurser = document.getElementById("kursLista");
+//Definerar
 //Formulär
 let addKurs = document.getElementById("addKurs");
 //---------------------------------------------------------------------
 addKurs.addEventListener("submit", (event)=>{
     event.preventDefault();
+    //---------------------------------------------------------------------
+    // Sätter olika variabler med deras input
     const kursKod = document.getElementById("kursKod");
     const kursNamn = document.getElementById("kursNamn");
     const progression = document.getElementById("progression");
     const url = document.getElementById("url");
     const checkProgression = progression.value;
     if (checkProgression != "A" && checkProgression != "B" && checkProgression != "C") {
-        alert("Progression m\xe5ste vara A, B, eller C");
+        alert("Progression m\xe5ste vara A, B, eller C"); //Skickar detta som alert.
         return;
     }
     const nyKurs = {
@@ -608,27 +607,29 @@ addKurs.addEventListener("submit", (event)=>{
         progression: progression.value,
         syllabus: url.value
     };
-    let kursLista = JSON.parse(localStorage.getItem("kursLista"));
-    if (!kursLista) kursLista = [];
-    kursLista.push(nyKurs);
-    localStorage.setItem("kursLista", JSON.stringify(kursLista));
+    let kursLista = JSON.parse(localStorage.getItem("kursLista")); //hämtar Localstorage
+    if (!kursLista) kursLista = []; //om inget finns så blir kursLista tom array.
+    kursLista.push(nyKurs); //Lägger till nyKurs
+    localStorage.setItem("kursLista", JSON.stringify(kursLista)) //Sparar
+    ;
     adderaKurs(nyKurs);
 });
+//---------------------------------------------------------------------
 function adderaKurs(kursInfo) {
     let kurserLista = document.getElementById("kursLista");
     if (kurserLista) {
-        let nyDiv = document.createElement("Div");
+        let nyDiv = document.createElement("Div"); //Skapar div
         nyDiv.innerHTML = `<h2>Kursinfo</h2>
         <p><strong>Kurskod:</strong> ${kursInfo.code}</p>
         <p><strong>Kursnamn:</strong> ${kursInfo.name}</p>
         <p><strong>Progression:</strong> ${kursInfo.progression}</p>
         <p><strong>Url:</strong> ${kursInfo.syllabus}</p>`;
-        kurserLista.appendChild(nyDiv);
+        kurserLista.appendChild(nyDiv); //Lägger till på kursLista
     }
 }
 //-------------------------------------------//---------------//-------------
 function sparadeKurser() {
-    let allaKurser = JSON.parse(localStorage.getItem("kursLista"));
+    let allaKurser = JSON.parse(localStorage.getItem("kursLista")); //omvandlar och hämtar.
     if (allaKurser) allaKurser.forEach((x)=>{
         adderaKurs(x);
     });
