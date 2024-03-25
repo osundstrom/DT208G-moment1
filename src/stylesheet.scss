@@ -45,7 +45,7 @@ body {
     width: 50vw;
     margin: auto;
 
-    div{
+    li{
         border: 1px solid black;
         border-radius: 4%;
         margin: 1%;
@@ -53,14 +53,28 @@ body {
         background-color: rgb(231, 255, 173);
         color: rgb(0, 0, 0);
         width: 24vw;
+        list-style: none;
+        
+        div{
+            display: inline-block;
+        }
     }
+
 
     h2{
         text-decoration: underline;
-        margin-left: 2vw;
+        margin-left: 0.5vw;
      }
 
-     p{
-        margin-left: 2vw;
+   
+
+     #redigeraKnapp{
+        margin-left: 0.5vw;
+        margin-top: 0.5vh;
      }
+
+     #redigeraKnapp:hover{
+        background-color: yellow;
+     }
+
 }

@@ -601,30 +601,88 @@ addKurs.addEventListener("submit", (event)=>{
         alert("Progression m\xe5ste vara A, B, eller C"); //Skickar detta som alert.
         return;
     }
-    const nyKurs = {
+    let nyKurs = {
         code: kursKod.value,
         name: kursNamn.value,
         progression: progression.value,
         syllabus: url.value
     };
-    let kursLista = JSON.parse(localStorage.getItem("kursLista")); //hämtar Localstorage
-    if (!kursLista) kursLista = []; //om inget finns så blir kursLista tom array.
-    kursLista.push(nyKurs); //Lägger till nyKurs
-    localStorage.setItem("kursLista", JSON.stringify(kursLista)) //Sparar
-    ;
+    let kursLista = JSON.parse(localStorage.getItem("kursLista")) || [];
+    /*if (!kursLista) {
+        kursLista = [];
+    }*/ kursLista.push(nyKurs); //Lägger till nyKurs
+    localStorage.setItem("kursLista", JSON.stringify(kursLista)); //Sparar
     adderaKurs(nyKurs);
 });
 //---------------------------------------------------------------------
 function adderaKurs(kursInfo) {
     let kurserLista = document.getElementById("kursLista");
     if (kurserLista) {
-        let nyDiv = document.createElement("Div");
-        nyDiv.innerHTML = `<h2>Kursinfo</h2>
-        <p><strong>Kurskod:</strong> ${kursInfo.code}</p>
-        <p><strong>Kursnamn:</strong> ${kursInfo.name}</p>
-        <p><strong>Progression:</strong> ${kursInfo.progression}</p>
-        <p><strong>Url:</strong> ${kursInfo.syllabus}</p>`;
-        kurserLista.appendChild(nyDiv); //Lägger till på kursLista
+        let nyUl = document.createElement("ul");
+        nyUl.innerHTML = `<h2>Kursinfo</h2>
+        <li><strong>Kurskod:</strong> <div> ${kursInfo.code}</div></li>
+        <li><strong>Kursnamn:</strong><div> ${kursInfo.name}</div></li>
+        <li><strong>Progression:</strong> <div>${kursInfo.progression}</div></li>
+        <li><strong>Url:</strong><div> ${kursInfo.syllabus}</div></li>
+        <button class="redigeraKnapp">Redigera </button>
+        <button class="sparaKnapp" style="display: none">Spara </button>`;
+        kurserLista.appendChild(nyUl); //Lägger till på kursLista
+        nyUl.querySelector(".redigeraKnapp").addEventListener("click", function() {
+            const sparaKnapp = nyUl.querySelector(".sparaKnapp"); //Väljer knappen
+            sparaKnapp.style.display = "inline-block";
+            const allDiv = nyUl.querySelectorAll("div");
+            allDiv.forEach((div)=>{
+                const redigera = document.createElement("input");
+                redigera.value = div.textContent;
+                div.appendChild(redigera);
+            });
+        });
+        nyUl.querySelector(".sparaKnapp").addEventListener("click", function() {
+            const sparaKnapp = nyUl.querySelector(".sparaKnapp"); //Väljer knappen
+            const inputs = nyUl.querySelectorAll("input"); //Väljer alla input
+            const nyKursInfo = {
+                code: "",
+                name: "",
+                progression: "",
+                syllabus: ""
+            };
+            inputs.forEach((div, x)=>{
+                const allDiv = nyUl.querySelectorAll("div")[x];
+                allDiv.textContent = div.value;
+                switch(x){
+                    case 0:
+                        nyKursInfo.code = div.value;
+                        break; //kurskod
+                    case 1:
+                        nyKursInfo.name = div.value;
+                        break; //kursnamn
+                    case 2:
+                        let giltigProgression = div.value === "A" || div.value === "B" || div.value === "C"; //Får vara A, B eller C
+                        if (giltigProgression) {
+                            nyKursInfo.progression = div.value; //Om den har de sätter den värdet.
+                            return;
+                        } else {
+                            alert("Progression m\xe5ste vara A, B, eller C"); //Annars skickas en alert 
+                            location.reload(); //sidan laddas om så den inte uppdeteras med fel(ogiltig progression)
+                        }
+                        break;
+                    case 3:
+                        nyKursInfo.syllabus = div.value;
+                        break; //url
+                }
+            });
+            let kursLista = JSON.parse(localStorage.getItem("kursLista"));
+            let x = -1; //x = -1
+            for(let i = 0; i < kursLista.length; i++)if (kursLista[i].code == kursInfo.code) {
+                x = i; //vid matchning blir x = i värdet
+                break;
+            }
+            if (x !== -1) {
+                kursLista[x] = nyKursInfo; //Ersätter med ny info
+                localStorage.setItem("kursLista", JSON.stringify(kursLista)); //sparar 
+            }
+            sparaKnapp.style.display = "none"; // tar bort spara knapp
+        });
     }
 }
 //-------------------------------------------//---------------//-------------
@@ -638,15 +696,15 @@ document.addEventListener("DOMContentLoaded", function() {
     sparadeKurser();
 });
 //-------------------------------------------//---------------//-------------
-let rensaKurser = document.getElementById("rensaKnapp");
+let rensaKurser = document.getElementById("rensaKnapp"); //Rensar alla kurser knapp
 rensaKurser.addEventListener("click", function() {
     rensaAllaKurser();
 });
 function rensaAllaKurser() {
-    localStorage.removeItem("kursLista");
-    let kursListaDiv = document.getElementById("kursLista");
-    if (kursListaDiv) kursListaDiv.innerHTML = "";
-}
+    localStorage.removeItem("kursLista"); //tar bort
+    let kursListaUl = document.getElementById("kursLista"); //väljer kursLista
+    if (kursListaUl) kursListaUl.innerHTML = ""; //Sätter den till tom
+} //-------------------------------------------//---------------//-------------//-------------------------------------------//---------------//-------------'
 
 },{}]},["dZI1r","jeorp"], "jeorp", "parcelRequire1f36")
 

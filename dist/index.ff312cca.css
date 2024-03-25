@@ -41,7 +41,7 @@ body {
   display: grid;
 }
 
-#kursLista div {
+#kursLista li {
   color: #000;
   background-color: #e7ffad;
   border: 1px solid #000;
@@ -49,14 +49,24 @@ body {
   width: 24vw;
   margin: 1%;
   padding: 1%;
+  list-style: none;
+}
+
+#kursLista li div {
+  display: inline-block;
 }
 
 #kursLista h2 {
-  margin-left: 2vw;
+  margin-left: .5vw;
   text-decoration: underline;
 }
 
-#kursLista p {
-  margin-left: 2vw;
+#kursLista #redigeraKnapp {
+  margin-top: .5vh;
+  margin-left: .5vw;
+}
+
+#kursLista #redigeraKnapp:hover {
+  background-color: #ff0;
 }
 /*# sourceMappingURL=index.ff312cca.css.map */
