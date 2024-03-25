@@ -26,11 +26,11 @@ addKurs.addEventListener("submit", (event) => { //Eventlistener vid submit
     const progression = document.getElementById("progression") as HTMLInputElement;
     const url = document.getElementById("url") as HTMLInputElement;
 
-    const checkProgression = progression.value;
+    const checkProgression: string = progression.value;
 
     if (checkProgression != "A" && checkProgression != "B" && checkProgression != "C") { //Veriferrar att progression är A, B eller C. 
         alert("Progression måste vara A, B, eller C"); //Skickar detta som alert.
-        return;}
+        return};
 
     const nyKurs: kursInfo = { //Sätter nyKurs till de olika unputsens värden
         code: kursKod.value,
@@ -62,16 +62,26 @@ addKurs.addEventListener("submit", (event) => { //Eventlistener vid submit
 function adderaKurs(kursInfo: kursInfo): void { //Funktion lägga till kurs
     let kurserLista = document.getElementById("kursLista"); 
     if (kurserLista) {
-        let nyDiv = document.createElement("Div"); //Skapar div
+       
+       
+    
+        
+            let nyDiv = document.createElement("Div"); 
+
+           
+
         nyDiv.innerHTML =  //Lägger till inehåll
         `<h2>Kursinfo</h2>
         <p><strong>Kurskod:</strong> ${kursInfo.code}</p>
         <p><strong>Kursnamn:</strong> ${kursInfo.name}</p>
         <p><strong>Progression:</strong> ${kursInfo.progression}</p>
-        <p><strong>Url:</strong> ${kursInfo.syllabus}</p>`
+        <p><strong>Url:</strong> ${kursInfo.syllabus}</p>`;
 
         kurserLista.appendChild(nyDiv); //Lägger till på kursLista
+        
+        
     }
+    
 }
 
 
@@ -88,9 +98,30 @@ function sparadeKurser(): void { //Funktion för att hämta sparade kurser (loca
 }
 
 
+
+
+
 document.addEventListener("DOMContentLoaded", function() { //Eventlistener ladda sidan
     sparadeKurser();
+
 })
 
 
 //-------------------------------------------//---------------//-------------
+
+let rensaKurser = document.getElementById("rensaKnapp") as HTMLButtonElement;
+rensaKurser.addEventListener("click", function(){
+    rensaAllaKurser();
+});
+
+
+
+function rensaAllaKurser(): void {
+    localStorage.removeItem("kursLista");
+    let kursListaDiv = document.getElementById("kursLista");
+    if(kursListaDiv) {
+        kursListaDiv.innerHTML= "";
+    }
+        
+}
+

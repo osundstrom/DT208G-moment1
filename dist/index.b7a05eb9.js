@@ -618,7 +618,7 @@ addKurs.addEventListener("submit", (event)=>{
 function adderaKurs(kursInfo) {
     let kurserLista = document.getElementById("kursLista");
     if (kurserLista) {
-        let nyDiv = document.createElement("Div"); //Skapar div
+        let nyDiv = document.createElement("Div");
         nyDiv.innerHTML = `<h2>Kursinfo</h2>
         <p><strong>Kurskod:</strong> ${kursInfo.code}</p>
         <p><strong>Kursnamn:</strong> ${kursInfo.name}</p>
@@ -636,8 +636,17 @@ function sparadeKurser() {
 }
 document.addEventListener("DOMContentLoaded", function() {
     sparadeKurser();
-}) //-------------------------------------------//---------------//-------------
-;
+});
+//-------------------------------------------//---------------//-------------
+let rensaKurser = document.getElementById("rensaKnapp");
+rensaKurser.addEventListener("click", function() {
+    rensaAllaKurser();
+});
+function rensaAllaKurser() {
+    localStorage.removeItem("kursLista");
+    let kursListaDiv = document.getElementById("kursLista");
+    if (kursListaDiv) kursListaDiv.innerHTML = "";
+}
 
 },{}]},["dZI1r","jeorp"], "jeorp", "parcelRequire1f36")
 
