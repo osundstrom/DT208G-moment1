@@ -90,7 +90,9 @@ function adderaKurs(kursInfo: kursInfo): void { //Funktion lägga till kurs
         nyUl.querySelector(".redigeraKnapp").addEventListener("click", function () { //Eventlistener för redigerings knappen
 
             const sparaKnapp: HTMLButtonElement = nyUl.querySelector(".sparaKnapp") as HTMLButtonElement; //Väljer knappen
+            
             sparaKnapp.style.display = "inline-block";
+            
 
 
             const allDiv: NodeListOf<HTMLDivElement> = nyUl.querySelectorAll("div");

@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-6086
-=======
 6096
->>>>>>> Dev
-59C:\DT208G-moment1\node_modules\source-map\lib\base64-vlq.js133553437038971693 0
-36C:\DT208G-moment1\node_modules\chalk133553437039211738 1
-52C:\DT208G-moment1\node_modules\sass\sass.default.cjs133557802829256216 0
-88C:\DT208G-moment1\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest6.c133553437046312972 0
-72C:\DT208G-moment1\node_modules\typescript\lib\lib.decorators.legacy.d.ts133554524269225295 0
 62C:\DT208G-moment1\node_modules\caniuse-lite\data\regions\DO.js133553437052329023 0
 60C:\DT208G-moment1\node_modules\@parcel\cache\lib\IDBCache.js133553437039616811 0
 66C:\DT208G-moment1\node_modules\typescript\lib\lib.es2017.date.d.ts133554524269555351 0
@@ -20,11 +11,7 @@
 77C:\DT208G-moment1\node_modules\css-select\node_modules\dom-serializer\LICENSE133553437036396245 0
 62C:\DT208G-moment1\node_modules\caniuse-lite\data\regions\KR.js133553437055684607 0
 73C:\DT208G-moment1\node_modules\@swc\helpers\_\_class_apply_descriptor_get133553437050518703 1
-<<<<<<< HEAD
-30C:\DT208G-moment1\package.json133558589719300585 0
-=======
-30C:\DT208G-moment1\package.json133557802830091373 0
->>>>>>> Dev
+30C:\DT208G-moment1\package.json133558590933895956 0
 50C:\DT208G-moment1\node_modules\color-name\index.js133553437036801317 0
 88C:\DT208G-moment1\node_modules\csso\node_modules\css-tree\cjs\definition-syntax\walk.cjs133553437048153305 0
 54C:\DT208G-moment1\node_modules\source-map\package.json133553437036186213 0
@@ -42,10 +29,7 @@
 53C:\DT208G-moment1\node_modules\@parcel\logger\LICENSE133553437036376238 0
 59C:\DT208G-moment1\node_modules\type-fest\source\except.d.ts133553437041042057 0
 38C:\DT208G-moment1\node_modules\timsort133553437039476788 1
-<<<<<<< HEAD
-=======
-22C:\DT208G-moment1\dist133558587798512990 1
->>>>>>> Dev
+22C:\DT208G-moment1\dist133558590933865963 1
 94C:\DT208G-moment1\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\lexer\Lexer.js133553437046242978 0
 59C:\DT208G-moment1\node_modules\electron-to-chromium\LICENSE133553437036456264 0
 94C:\DT208G-moment1\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeAttrs.js133553437044202601 0
@@ -60,16 +44,25 @@
 67C:\DT208G-moment1\node_modules\dom-serializer\node_modules\entities133553437041057067 1
 69C:\DT208G-moment1\node_modules\@parcel\core\lib\public\Environment.js133553437046097950 0
 73C:\DT208G-moment1\node_modules\csso\node_modules\css-tree\lib\syntax\node133553437051893943 1
-35C:\DT208G-moment1\package-lock.json133558589719285568 0
 53C:\DT208G-moment1\node_modules\htmlnano\.eslintignore133553437036271219 0
-<<<<<<< HEAD
+35C:\DT208G-moment1\package-lock.json133558590933885952 0
 30C:\DT208G-moment1\node_modules133557802830046355 1
-21C:\DT208G-moment1\src133558589719325595 1
-=======
-35C:\DT208G-moment1\package-lock.json133557802831326565 0
-30C:\DT208G-moment1\node_modules133557802830046355 1
-21C:\DT208G-moment1\src133557819418054301 1
->>>>>>> Dev
+43C:\DT208G-moment1\node_modules\import-fresh133553437038211565 1
+47C:\DT208G-moment1\node_modules\msgpackr\pack.js133553437041692164 0
+77C:\DT208G-moment1\node_modules\caniuse-lite\data\features\css-first-letter.js133553437049268489 0
+69C:\DT208G-moment1\node_modules\svgo\plugins\addClassesToSVGElement.js133553437043892550 0
+53C:\DT208G-moment1\node_modules\msgpackr\node-index.js133553437041442123 0
+52C:\DT208G-moment1\node_modules\@swc\helpers\_\_throw133553437052724088 1
+76C:\DT208G-moment1\node_modules\caniuse-lite\data\features\getrandomvalues.js133553437054089326 0
+71C:\DT208G-moment1\node_modules\@parcel\core\test\RequestTracker.test.js133553437048618384 0
+60C:\DT208G-moment1\node_modules\weak-lru-cache\LRFUExpirer.js133553437038116549 0
+75C:\DT208G-moment1\node_modules\caniuse-lite\data\features\css-exclusions.js133553437049158473 0
+48C:\DT208G-moment1\node_modules\boolbase\index.js133553437037316425 0
+85C:\DT208G-moment1\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\src133553437046347979 1
+82C:\DT208G-moment1\node_modules\dom-serializer\node_modules\entities\lib\index.d.ts133553437041717171 0
+70C:\DT208G-moment1\node_modules\htmlparser2\lib\WritableStream.d.ts.map133553437040531984 0
+72C:\DT208G-moment1\node_modules\typescript\lib\lib.dom.asynciterable.d.ts133554524269235291 0
+21C:\DT208G-moment1\src133558590933920964 1
 62C:\DT208G-moment1\node_modules\caniuse-lite\data\regions\ET.js133553437052844107 0
 74C:\DT208G-moment1\node_modules\caniuse-lite\data\features\online-status.js133553437057099860 0
 98C:\DT208G-moment1\node_modules\@parcel\optimizer-svgo\node_modules\svgo\lib\svgo\css-class-list.js133553437042522311 0
@@ -80,33 +73,22 @@
 84C:\DT208G-moment1\node_modules\@parcel\transformer-postcss\src\PostCSSTransformer.js133553437039951863 0
 49C:\DT208G-moment1\node_modules\htmlnano\index.cjs133553437040541977 0
 70C:\DT208G-moment1\node_modules\caniuse-lite\data\features\css3-attr.js133553437051593897 0
-<<<<<<< HEAD
-32C:\DT208G-moment1\src\index.html133558589719315595 0
-=======
-31C:\DT208G-moment1\tsconfig.json133554527419424709 0
-32C:\DT208G-moment1\src\index.html133558588449086416 0
->>>>>>> Dev
+31C:\DT208G-moment1\tsconfig.json133558590933930962 0
+32C:\DT208G-moment1\src\index.html133558590933905970 0
 45C:\DT208G-moment1\node_modules\css-select\lib133553437046823065 1
 54C:\DT208G-moment1\node_modules\@lezer\lr\dist\index.js133553437039271748 0
 64C:\DT208G-moment1\node_modules\@parcel\graph\src\ContentGraph.js133553437040641992 0
 59C:\DT208G-moment1\node_modules\msgpackr-extract\binding.gyp133553437037461439 0
-<<<<<<< HEAD
-29C:\DT208G-moment1\src\main.ts133558589719325595 0
-=======
-29C:\DT208G-moment1\src\main.ts133558588503540032 0
->>>>>>> Dev
+29C:\DT208G-moment1\src\main.ts133558593371966403 0
 59C:\DT208G-moment1\node_modules\nth-check\lib\parse.d.ts.map133553437041592153 0
 59C:\DT208G-moment1\node_modules\css-tree\lib\walker\index.js133553437050448706 0
 54C:\DT208G-moment1\node_modules\semver\functions\gte.js133553437040967048 0
 40C:\DT208G-moment1\node_modules\immutable133557802829466243 1
-<<<<<<< HEAD
-=======
-37C:\DT208G-moment1\src\stylesheet.scss133558588257169956 0
->>>>>>> Dev
+37C:\DT208G-moment1\src\stylesheet.scss133558590933925958 0
 50C:\DT208G-moment1\node_modules\weak-lru-cache\dist133553437036236220 1
 71C:\DT208G-moment1\node_modules\@swc\helpers\esm\_array_without_holes.js133553437047158123 0
 81C:\DT208G-moment1\node_modules\csso\node_modules\css-tree\cjs\generator\index.cjs133553437045212792 0
-53C:\DT208G-moment1\dist\DT208G-moment1.59712999.js.map133553441283525263 0
+53C:\DT208G-moment1\dist\DT208G-moment1.59712999.js.map133558590933815958 0
 59C:\DT208G-moment1\node_modules\posthtml-render\changelog.md133553437038111550 0
 96C:\DT208G-moment1\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\types.d.ts.map133553437042612326 0
 51C:\DT208G-moment1\node_modules\escape-string-regexp133553437037686486 1
@@ -295,6 +277,8 @@
 52C:\DT208G-moment1\node_modules\is-json\test\index.js133553437039176734 0
 68C:\DT208G-moment1\node_modules\typescript\lib\lib.esnext.object.d.ts133554524270285469 0
 40C:\DT208G-moment1\node_modules\callsites133553437038201565 1
+59C:\DT208G-moment1\node_modules\source-map\lib\base64-vlq.js133553437038971693 0
+36C:\DT208G-moment1\node_modules\chalk133553437039211738 1
 66C:\DT208G-moment1\node_modules\@swc\helpers\_\_update\package.json133553437053179174 0
 49C:\DT208G-moment1\node_modules\chrome-trace-event133553437039196737 1
 39C:\DT208G-moment1\node_modules\has-flag133553437038186558 1
@@ -359,21 +343,6 @@
 58C:\DT208G-moment1\node_modules\@parcel\packager-js\LICENSE133553437036366251 0
 42C:\DT208G-moment1\node_modules\htmlparser2133553437040666989 1
 61C:\DT208G-moment1\node_modules\@swc\helpers\scripts\errors.js133553437049628550 0
-43C:\DT208G-moment1\node_modules\import-fresh133553437038211565 1
-47C:\DT208G-moment1\node_modules\msgpackr\pack.js133553437041692164 0
-77C:\DT208G-moment1\node_modules\caniuse-lite\data\features\css-first-letter.js133553437049268489 0
-69C:\DT208G-moment1\node_modules\svgo\plugins\addClassesToSVGElement.js133553437043892550 0
-53C:\DT208G-moment1\node_modules\msgpackr\node-index.js133553437041442123 0
-52C:\DT208G-moment1\node_modules\@swc\helpers\_\_throw133553437052724088 1
-76C:\DT208G-moment1\node_modules\caniuse-lite\data\features\getrandomvalues.js133553437054089326 0
-71C:\DT208G-moment1\node_modules\@parcel\core\test\RequestTracker.test.js133553437048618384 0
-60C:\DT208G-moment1\node_modules\weak-lru-cache\LRFUExpirer.js133553437038116549 0
-75C:\DT208G-moment1\node_modules\caniuse-lite\data\features\css-exclusions.js133553437049158473 0
-48C:\DT208G-moment1\node_modules\boolbase\index.js133553437037316425 0
-85C:\DT208G-moment1\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\src133553437046347979 1
-82C:\DT208G-moment1\node_modules\dom-serializer\node_modules\entities\lib\index.d.ts133553437041717171 0
-70C:\DT208G-moment1\node_modules\htmlparser2\lib\WritableStream.d.ts.map133553437040531984 0
-72C:\DT208G-moment1\node_modules\typescript\lib\lib.dom.asynciterable.d.ts133554524269235291 0
 89C:\DT208G-moment1\node_modules\@parcel\runtime-service-worker\src\ServiceWorkerRuntime.js133553437037651478 0
 86C:\DT208G-moment1\node_modules\css-select\node_modules\domutils\lib\stringify.d.ts.map133553437044212609 0
 56C:\DT208G-moment1\node_modules\csso\lib\clean\Comment.js133553437045382814 0
@@ -426,7 +395,7 @@
 64C:\DT208G-moment1\node_modules\svgo\plugins\removeHiddenElems.js133553437046107940 0
 81C:\DT208G-moment1\node_modules\csso\node_modules\css-tree\cjs\tokenizer\utils.cjs133553437047993280 0
 48C:\DT208G-moment1\node_modules\csso\package.json133553437047178126 0
-45C:\DT208G-moment1\dist\index.ff312cca.css.map133558587798507989 0
+45C:\DT208G-moment1\dist\index.ff312cca.css.map133558590933860962 0
 96C:\DT208G-moment1\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\api\inheritance.json133553437040701999 0
 57C:\DT208G-moment1\node_modules\svgo\plugins\reusePaths.js133553437046853078 0
 60C:\DT208G-moment1\node_modules\json-parse-even-better-errors133553437038196555 1
@@ -888,6 +857,9 @@
 53C:\DT208G-moment1\node_modules\is-number\package.json133553437036176203 0
 65C:\DT208G-moment1\node_modules\typescript\lib\lib.decorators.d.ts133554524269215286 0
 58C:\DT208G-moment1\node_modules\typescript\lib\lib.es6.d.ts133554524270200461 0
+52C:\DT208G-moment1\node_modules\sass\sass.default.cjs133557802829256216 0
+88C:\DT208G-moment1\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest6.c133553437046312972 0
+72C:\DT208G-moment1\node_modules\typescript\lib\lib.decorators.legacy.d.ts133554524269225295 0
 58C:\DT208G-moment1\node_modules\typescript\lib\lib.dom.d.ts133554524269340329 0
 85C:\DT208G-moment1\node_modules\@parcel\core\test\fixtures\common-targets\package.json133553437049923608 0
 101C:\DT208G-moment1\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc-multiple133553437041232090 0
@@ -968,8 +940,8 @@
 51C:\DT208G-moment1\node_modules\is-glob\package.json133553437037376428 0
 66C:\DT208G-moment1\node_modules\typescript\lib\lib.es2017.full.d.ts133554524269565344 0
 75C:\DT208G-moment1\node_modules\@swc\helpers\_\_super_prop_base\package.json133553437052664073 0
-78C:\DT208G-moment1\node_modules\@swc\helpers\cjs\_skip_first_generator_next.cjs133553437045982924 0
 67C:\DT208G-moment1\node_modules\svgo\plugins\cleanupNumericValues.js133553437044327624 0
+78C:\DT208G-moment1\node_modules\@swc\helpers\cjs\_skip_first_generator_next.cjs133553437045982924 0
 78C:\DT208G-moment1\node_modules\caniuse-lite\data\features\css-logical-props.js133553437049788582 0
 56C:\DT208G-moment1\node_modules\sass\types\exception.d.ts133557802829686287 0
 85C:\DT208G-moment1\node_modules\csso\node_modules\mdn-data\api\inheritance.schema.json133553437040932044 0
@@ -2653,8 +2625,8 @@
 52C:\DT208G-moment1\node_modules\import-fresh\index.js133553437036791315 0
 83C:\DT208G-moment1\node_modules\caniuse-lite\data\features\element-scroll-methods.js133553437052644075 0
 56C:\DT208G-moment1\node_modules\import-fresh\package.json133553437037346408 0
-47C:\DT208G-moment1\node_modules\dotenv\README.md133553437038471604 0
 58C:\DT208G-moment1\node_modules\css-tree\lib\utils\names.js133553437050748748 0
+47C:\DT208G-moment1\node_modules\dotenv\README.md133553437038471604 0
 57C:\DT208G-moment1\node_modules\binary-extensions\index.js133557802829181197 0
 58C:\DT208G-moment1\node_modules\immutable\dist\immutable.js133557802829426242 0
 63C:\DT208G-moment1\node_modules\immutable\dist\immutable.js.flow133557802829231208 0
@@ -2719,7 +2691,7 @@
 59C:\DT208G-moment1\node_modules\htmlnano\lib\presets\max.mjs133553437046618039 0
 82C:\DT208G-moment1\node_modules\caniuse-lite\data\features\getboundingclientrect.js133553437054039327 0
 66C:\DT208G-moment1\node_modules\caniuse-lite\data\regions\alt-eu.js133553437041922210 0
-49C:\DT208G-moment1\dist\DT208G-moment1.59712999.js133553441283490257 0
+49C:\DT208G-moment1\dist\DT208G-moment1.59712999.js133558590933800951 0
 81C:\DT208G-moment1\node_modules\htmlnano\lib\modules\collapseBooleanAttributes.mjs133553437046257968 0
 73C:\DT208G-moment1\node_modules\entities\lib\generated\decode-data-html.js133553437038321578 0
 41C:\DT208G-moment1\node_modules\braces\lib133553437040276924 1
@@ -3564,10 +3536,7 @@
 114C:\DT208G-moment1\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\prepare\processSelector.js133553437044052585 0
 58C:\DT208G-moment1\node_modules\css-tree\cjs\data-patch.cjs133553437043047409 0
 53C:\DT208G-moment1\node_modules\css-tree\cjs\generator133553437047898256 1
-<<<<<<< HEAD
-=======
-44C:\DT208G-moment1\dist\index.b7a05eb9.js.map133558587665971438 0
->>>>>>> Dev
+44C:\DT208G-moment1\dist\index.b7a05eb9.js.map133558590933840959 0
 53C:\DT208G-moment1\node_modules\css-tree\cjs\index.cjs133553437045517835 0
 49C:\DT208G-moment1\node_modules\css-tree\cjs\lexer133553437048103284 1
 75C:\DT208G-moment1\node_modules\caniuse-lite\data\features\array-includes.js133553437043387464 0
@@ -5328,7 +5297,7 @@
 65C:\DT208G-moment1\node_modules\@parcel\packager-wasm\package.json133553437039281753 0
 56C:\DT208G-moment1\node_modules\@parcel\packager-wasm\src133553437038836666 1
 79C:\DT208G-moment1\node_modules\@parcel\packager-wasm\src\wasm-sourcemap.js.flow133553437037031356 0
-41C:\DT208G-moment1\dist\index.ff312cca.css133558587798482977 0
+41C:\DT208G-moment1\dist\index.ff312cca.css133558590933850965 0
 72C:\DT208G-moment1\node_modules\@parcel\packager-wasm\lib\WasmPackager.js133553437038576629 0
 55C:\DT208G-moment1\node_modules\@parcel\packager-svg\lib133553437036876332 1
 94C:\DT208G-moment1\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\replace\Url.js133553437044437648 0
@@ -6124,5 +6093,5 @@
 58C:\DT208G-moment1\node_modules\.bin\update-browserslist-db133553437061383994 0
 62C:\DT208G-moment1\node_modules\.bin\update-browserslist-db.cmd133553437061383994 0
 62C:\DT208G-moment1\node_modules\.bin\update-browserslist-db.ps1133553437061383994 0
-33C:\DT208G-moment1\dist\index.html133558587665701395 0
-40C:\DT208G-moment1\dist\index.b7a05eb9.js133558587665936426 0
+40C:\DT208G-moment1\dist\index.b7a05eb9.js133558590933830950 0
+33C:\DT208G-moment1\dist\index.html133558590933865963 0
