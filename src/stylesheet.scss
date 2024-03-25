@@ -1,0 +1,146 @@
+
+
+body {
+    background-color: mintcream;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+#kursDiv{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    #rensaKnapp{
+        margin: auto;
+        display: block;
+    }
+
+    #rensaKnapp:hover{
+        background-color: red;
+        color: white;
+    }
+
+}
+
+
+#addKurs {
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    h1{
+        text-decoration: underline;
+    }
+
+    #kursKnapp:hover{
+        background-color: rgb(0, 238, 0);
+    }
+     
+}
+
+
+#kursLista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50vw;
+    margin: auto;
+
+    li{
+        border: 1px solid black;
+        border-radius: 4%;
+        margin: 1%;
+        padding: 1%;
+        background-color: rgb(231, 255, 173);
+        color: rgb(0, 0, 0);
+        width: 24vw;
+        list-style: none;
+        
+        div{
+            display: inline-block;
+        }
+    }
+
+
+    h2{
+        text-decoration: underline;
+        margin-left: 0.5vw;
+     }
+
+   
+
+     #redigeraKnapp{
+        margin-left: 0.5vw;
+        margin-top: 0.5vh;
+     }
+
+     #redigeraKnapp:hover{
+        background-color: yellow;
+     }
+
+}
+
+@media  (max-width:800px) {
+    
+    #kursListaDiv {
+        width: 80vw;
+        margin: auto;
+    }
+
+    #kursLista {
+        display: block;
+        width: 100vw;
+        margin: 0 auto;
+        position: relative;
+    
+        li{
+            border: 1px solid black;
+            border-radius: 4%;
+            margin: 1%;
+            padding: 1%;
+            background-color: rgb(231, 255, 173);
+            color: rgb(0, 0, 0);
+            width: 35vw;
+            list-style: none;
+            position: relative;
+            
+            div{
+                display: inline-block;
+                position: relative;
+                
+            }
+        }
+    
+    
+        h2{
+            text-decoration: underline;
+            margin-left: 0.5vw;
+         }
+
+         button{
+            margin: auto;
+            position: relative;
+         }
+    
+       
+    
+         
+    
+    }
+
+
+    #addKurs {
+        text-align: center;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        h1{
+            text-decoration: underline;
+        }
+        input {
+            width: 14vw;
+        }
+}
+
+
+
+}

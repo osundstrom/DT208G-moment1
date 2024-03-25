@@ -1,0 +1,128 @@
+body {
+  background-color: #f5fffa;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#kursDiv {
+  width: 100vw;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+#kursDiv #rensaKnapp {
+  margin: auto;
+  display: block;
+}
+
+#kursDiv #rensaKnapp:hover {
+  color: #fff;
+  background-color: red;
+}
+
+#addKurs {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#addKurs h1 {
+  text-decoration: underline;
+}
+
+#addKurs #kursKnapp:hover {
+  background-color: #0e0;
+}
+
+#kursLista {
+  grid-template-columns: repeat(2, 1fr);
+  width: 50vw;
+  margin: auto;
+  display: grid;
+}
+
+#kursLista li {
+  color: #000;
+  background-color: #e7ffad;
+  border: 1px solid #000;
+  border-radius: 4%;
+  width: 24vw;
+  margin: 1%;
+  padding: 1%;
+  list-style: none;
+}
+
+#kursLista li div {
+  display: inline-block;
+}
+
+#kursLista h2 {
+  margin-left: .5vw;
+  text-decoration: underline;
+}
+
+#kursLista #redigeraKnapp {
+  margin-top: .5vh;
+  margin-left: .5vw;
+}
+
+#kursLista #redigeraKnapp:hover {
+  background-color: #ff0;
+}
+
+@media (width <= 800px) {
+  #kursListaDiv {
+    width: 80vw;
+    margin: auto;
+  }
+
+  #kursLista {
+    width: 100vw;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+
+  #kursLista li {
+    color: #000;
+    background-color: #e7ffad;
+    border: 1px solid #000;
+    border-radius: 4%;
+    width: 35vw;
+    margin: 1%;
+    padding: 1%;
+    list-style: none;
+    position: relative;
+  }
+
+  #kursLista li div {
+    display: inline-block;
+    position: relative;
+  }
+
+  #kursLista h2 {
+    margin-left: .5vw;
+    text-decoration: underline;
+  }
+
+  #kursLista button {
+    margin: auto;
+    position: relative;
+  }
+
+  #addKurs {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  #addKurs h1 {
+    text-decoration: underline;
+  }
+
+  #addKurs input {
+    width: 14vw;
+  }
+}
+/*# sourceMappingURL=index.ff312cca.css.map */
