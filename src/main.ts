@@ -169,7 +169,7 @@ function adderaKurs(kursInfo: kursInfo): void { //Funktion lägga till kurs
 
 
             sparaKnapp.style.display = "none"; // tar bort spara knapp
-            redigeraKnapp.style.display = "block"
+            redigeraKnapp.style.display = "inline-block"
         });
     }
 }

@@ -685,7 +685,7 @@ function adderaKurs(kursInfo) {
                 localStorage.setItem("kursLista", JSON.stringify(kursLista)); //sparar 
             }
             sparaKnapp.style.display = "none"; // tar bort spara knapp
-            redigeraKnapp.style.display = "block";
+            redigeraKnapp.style.display = "inline-block";
         });
     }
 }

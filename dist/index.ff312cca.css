@@ -113,6 +113,7 @@ body {
   #kursLista button {
     margin: auto;
     position: relative;
+    left: 0;
   }
 
   #addKurs {
