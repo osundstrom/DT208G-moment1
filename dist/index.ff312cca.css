@@ -101,6 +101,10 @@ body {
     position: relative;
   }
 
+  #kursLista li input {
+    width: 20vw;
+  }
+
   #kursLista h2 {
     margin-left: .5vw;
     text-decoration: underline;

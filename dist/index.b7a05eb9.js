@@ -629,7 +629,9 @@ function adderaKurs(kursInfo) {
         kurserLista.appendChild(nyUl); //Lägger till på kursLista
         nyUl.querySelector(".redigeraKnapp").addEventListener("click", function() {
             const sparaKnapp = nyUl.querySelector(".sparaKnapp"); //Väljer knappen
+            const redigeraKnapp = nyUl.querySelector(".redigeraKnapp"); //Väljer knappen
             sparaKnapp.style.display = "inline-block";
+            redigeraKnapp.style.display = "none";
             const allDiv = nyUl.querySelectorAll("div");
             allDiv.forEach((div)=>{
                 const redigera = document.createElement("input");
@@ -639,6 +641,7 @@ function adderaKurs(kursInfo) {
         });
         nyUl.querySelector(".sparaKnapp").addEventListener("click", function() {
             const sparaKnapp = nyUl.querySelector(".sparaKnapp"); //Väljer knappen
+            const redigeraKnapp = nyUl.querySelector(".redigeraKnapp"); //Väljer knappen
             const inputs = nyUl.querySelectorAll("input"); //Väljer alla input
             const nyKursInfo = {
                 code: "",
@@ -682,6 +685,7 @@ function adderaKurs(kursInfo) {
                 localStorage.setItem("kursLista", JSON.stringify(kursLista)); //sparar 
             }
             sparaKnapp.style.display = "none"; // tar bort spara knapp
+            redigeraKnapp.style.display = "block";
         });
     }
 }
