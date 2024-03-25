@@ -70,7 +70,7 @@
 53C:\DT208G-moment1\node_modules\@parcel\logger\LICENSE133553437036376238 0
 59C:\DT208G-moment1\node_modules\type-fest\source\except.d.ts133553437041042057 0
 38C:\DT208G-moment1\node_modules\timsort133553437039476788 1
-22C:\DT208G-moment1\dist133558601521542359 1
+22C:\DT208G-moment1\dist133558602786277043 1
 94C:\DT208G-moment1\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\lexer\Lexer.js133553437046242978 0
 59C:\DT208G-moment1\node_modules\electron-to-chromium\LICENSE133553437036456264 0
 62C:\DT208G-moment1\node_modules\caniuse-lite\data\regions\DO.js133553437052329023 0
@@ -87,7 +87,7 @@
 77C:\DT208G-moment1\node_modules\css-select\node_modules\dom-serializer\LICENSE133553437036396245 0
 62C:\DT208G-moment1\node_modules\caniuse-lite\data\regions\KR.js133553437055684607 0
 73C:\DT208G-moment1\node_modules\@swc\helpers\_\_class_apply_descriptor_get133553437050518703 1
-44C:\DT208G-moment1\dist\index.b7a05eb9.js.map133558601521532363 0
+44C:\DT208G-moment1\dist\index.b7a05eb9.js.map133558602786262049 0
 53C:\DT208G-moment1\node_modules\css-tree\cjs\index.cjs133553437045517835 0
 36C:\DT208G-moment1\node_modules\chalk133553437039211738 1
 59C:\DT208G-moment1\node_modules\source-map\lib\base64-vlq.js133553437038971693 0
@@ -126,7 +126,7 @@
 54C:\DT208G-moment1\node_modules\@lezer\lr\dist\index.js133553437039271748 0
 64C:\DT208G-moment1\node_modules\@parcel\graph\src\ContentGraph.js133553437040641992 0
 59C:\DT208G-moment1\node_modules\msgpackr-extract\binding.gyp133553437037461439 0
-29C:\DT208G-moment1\src\main.ts133558601520352286 0
+29C:\DT208G-moment1\src\main.ts133558602785129207 0
 59C:\DT208G-moment1\node_modules\nth-check\lib\parse.d.ts.map133553437041592153 0
 37C:\DT208G-moment1\src\stylesheet.scss133558599020171337 0
 50C:\DT208G-moment1\node_modules\weak-lru-cache\dist133553437036236220 1
@@ -6092,4 +6092,4 @@
 58C:\DT208G-moment1\node_modules\.bin\update-browserslist-db133553437061383994 0
 62C:\DT208G-moment1\node_modules\.bin\update-browserslist-db.cmd133553437061383994 0
 62C:\DT208G-moment1\node_modules\.bin\update-browserslist-db.ps1133553437061383994 0
-40C:\DT208G-moment1\dist\index.b7a05eb9.js133558601521492342 0
+40C:\DT208G-moment1\dist\index.b7a05eb9.js133558602786172031 0

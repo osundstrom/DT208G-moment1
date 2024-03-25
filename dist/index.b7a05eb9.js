@@ -630,6 +630,8 @@ function adderaKurs(kursInfo) {
         nyUl.querySelector(".redigeraKnapp").addEventListener("click", function() {
             const sparaKnapp = nyUl.querySelector(".sparaKnapp"); //Väljer knappen
             sparaKnapp.style.display = "inline-block";
+            const redigeraKnapp = nyUl.querySelector(".redigeraKnapp"); //Väljer knappen
+            redigeraKnapp.style.display = "none";
             const allDiv = nyUl.querySelectorAll("div");
             allDiv.forEach((div)=>{
                 const redigera = document.createElement("input");

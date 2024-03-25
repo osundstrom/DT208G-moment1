@@ -91,6 +91,8 @@ function adderaKurs(kursInfo: kursInfo): void { //Funktion lägga till kurs
 
             const sparaKnapp: HTMLButtonElement = nyUl.querySelector(".sparaKnapp") as HTMLButtonElement; //Väljer knappen
             sparaKnapp.style.display = "inline-block";
+            const redigeraKnapp: HTMLButtonElement = nyUl.querySelector(".redigeraKnapp") as HTMLButtonElement; //Väljer knappen
+            redigeraKnapp.style.display = "none";
 
 
             const allDiv: NodeListOf<HTMLDivElement> = nyUl.querySelectorAll("div");
