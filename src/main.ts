@@ -90,9 +90,7 @@ function adderaKurs(kursInfo: kursInfo): void { //Funktion lägga till kurs
         nyUl.querySelector(".redigeraKnapp").addEventListener("click", function () { //Eventlistener för redigerings knappen
 
             const sparaKnapp: HTMLButtonElement = nyUl.querySelector(".sparaKnapp") as HTMLButtonElement; //Väljer knappen
-            
             sparaKnapp.style.display = "inline-block";
-            
 
 
             const allDiv: NodeListOf<HTMLDivElement> = nyUl.querySelectorAll("div");
@@ -107,6 +105,7 @@ function adderaKurs(kursInfo: kursInfo): void { //Funktion lägga till kurs
 
         nyUl.querySelector(".sparaKnapp").addEventListener("click", function () { //Eventlistener för sparnings knappen
             const sparaKnapp: HTMLButtonElement  = nyUl.querySelector(".sparaKnapp") as HTMLButtonElement; //Väljer knappen
+            const redigeraKnapp: HTMLButtonElement = nyUl.querySelector(".redigeraKnapp") as HTMLButtonElement; //Väljer knappen
 
             const inputs: NodeListOf<HTMLInputElement> = nyUl.querySelectorAll("input"); //Väljer alla input
 
@@ -168,6 +167,7 @@ function adderaKurs(kursInfo: kursInfo): void { //Funktion lägga till kurs
 
 
             sparaKnapp.style.display = "none"; // tar bort spara knapp
+            redigeraKnapp.style.display = "block"
         });
     }
 }
